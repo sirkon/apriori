@@ -1,5 +1,5 @@
 # apriori
-Go proxy with a special care for pre-existing packages
+Go proxy with a special care for prior packages
 
 ## Rationale
 This go modules proxy is designed for building environments, where we desire to relieve a burden of numerous downloads
