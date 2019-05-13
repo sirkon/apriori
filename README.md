@@ -17,7 +17,7 @@ This tool consists of two parts:
 
 ### How cache generator works
 
-Cache generator recieves a list of modules to store in cache. The list should looks like
+Cache generator recieves a list of modules to store in cache. The list should look like
 
 ```
 github.com/sirkon/message@v1.5.1
