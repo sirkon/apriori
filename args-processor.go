@@ -165,7 +165,8 @@ func (ap *argsProcessor) generation() cli.CmdInitializer {
 }
 
 func (ap *argsProcessor) getModule(module string) (goproxy.Module, error) {
-	req, _ := http.NewRequest("GET", fmt.Sprintf("http://society.org/%s/@v/list", module), nil)
+	// We don't actually care about proxy address, we just need *http.Request instance with certain module path
+	req, _ := http.NewRequest("GET", fmt.Sprintf("http://proxy.golang.org/%s/@v/list", module), nil)
 	ss, err := ap.plugin.Module(req, "")
 	if err != nil {
 		return nil, fmt.Errorf("failed to get a plugin for module %s", module)
