@@ -4,8 +4,8 @@ import (
 	"os"
 
 	cli "github.com/jawher/mow.cli"
-	apriori "github.com/sirkon/goproxy/plugin_apriori"
-	cascade "github.com/sirkon/goproxy/plugin_cascade"
+	"github.com/sirkon/goproxy/plugin/apriori"
+	"github.com/sirkon/goproxy/plugin/cascade"
 )
 
 func envGoproxy() string {
